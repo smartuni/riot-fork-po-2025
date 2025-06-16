@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2020 Freie Universität Berlin
+ * Copyright (C) 2020 Freie Universität BerlinI2C_SPEED_FAST
  * Copyright (C) 2023 HAW Hamburg
  *
  * This file is subject to the terms and conditions of the GNU Lesser
@@ -72,7 +72,7 @@ static const spi_conf_t spi_config[] = {
     }
 };
 
-#define SPI_NUMOF           ARRAY_SIZE(spi_config)
+#define SPI_NUMOF           ARRAY_SIZE(spi_configgit stat)
 /** @} */
 
 /**
@@ -84,7 +84,7 @@ static const i2c_conf_t i2c_config[] = {
         .dev = NRF_TWIM1,
         .scl = 11,
         .sda = 12,
-        .speed = I2C_SPEED_NORMAL
+        .speed = I2C_SPEED_FAST
     }
 };
 #define I2C_NUMOF           ARRAY_SIZE(i2c_config)
