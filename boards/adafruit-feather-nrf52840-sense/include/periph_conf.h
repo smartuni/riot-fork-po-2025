@@ -72,7 +72,7 @@ static const spi_conf_t spi_config[] = {
     }
 };
 
-#define SPI_NUMOF           ARRAY_SIZE(spi_configgit stat)
+#define SPI_NUMOF           ARRAY_SIZE(spi_config)
 /** @} */
 
 /**
@@ -89,6 +89,17 @@ static const i2c_conf_t i2c_config[] = {
 };
 #define I2C_NUMOF           ARRAY_SIZE(i2c_config)
 /** @} */
+
+static const pwm_conf_t pwm_config[] = {
+    {
+        NRF_PWM0, 
+        {
+            GPIO_PIN(1,9),
+            GPIO_PIN(0,8),
+        }
+    }
+};
+#define PWM_NUMOF           ARRAY_SIZE(pwm_config)
 
 #ifdef __cplusplus
 }
